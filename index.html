@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-PT">
 <head>
@@ -5,125 +6,285 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lar Certo Imobiliária — Comprar e arrendar em Moçambique</title>
 <meta name="description" content="Apartamentos, moradias, terrenos e lojas para comprar ou arrendar em Maputo, Matola e Beira. Guarde os seus favoritos e agende uma visita por WhatsApp.">
+
 <style>
-  :root {
-    --fundo: #f3f6f9;
-    --papel: #ffffff;
-    --marinho: #0f2f4a;
-    --laranja: #e8731a;
-    --laranja-esc: #b95409;
-    --texto: #14232e;
-    --suave: #52636f;
-    --linha: #d5dee6;
-    --sol: #f6c453;
-  }
-  * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body { margin: 0; background: var(--fundo); color: var(--texto); font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.55; }
-  a { color: var(--laranja-esc); }
-  button, select, input, textarea { font: inherit; color: inherit; }
-  :focus-visible { outline: 3px solid var(--laranja); outline-offset: 2px; }
-  section { scroll-margin-top: 12px; }
+:root {
+  --fundo:#f3f6f9;
+  --papel:#fff;
+  --marinho:#0f2f4a;
+  --laranja:#e8731a;
+  --laranja-esc:#b95409;
+  --texto:#14232e;
+  --suave:#52636f;
+  --linha:#d5dee6;
+  --sol:#f6c453;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  margin:0;
+  background:var(--fundo);
+  color:var(--texto);
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  line-height:1.55;
+}
+a { color:var(--laranja-esc); }
+button,select,input,textarea { font:inherit;color:inherit; }
+:focus-visible { outline:3px solid var(--laranja);outline-offset:2px; }
+section { scroll-margin-top:12px; }
 
-  header.topo { background: var(--marinho); }
-  .topo-in { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; max-width: 1000px; margin: 0 auto; padding: 14px 20px; }
-  .marca { font-size: 1.4rem; font-weight: 800; color: #fff; text-decoration: none; letter-spacing: .2px; }
-  .marca span { color: var(--sol); }
-  nav { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 16px; }
-  nav a { color: #e4edf4; text-decoration: none; font-weight: 600; }
-  nav a:hover { color: #fff; text-decoration: underline; }
-  nav a.ir-visita { background: var(--laranja); color: #fff; padding: 8px 16px; border-radius: 6px; }
-  nav a.ir-visita:hover { background: var(--laranja-esc); text-decoration: none; }
+header.topo { background:var(--marinho); }
+.topo-in {
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px 16px;
+  max-width:1000px;
+  margin:0 auto;
+  padding:14px 20px;
+}
+.marca {
+  font-size:1.4rem;
+  font-weight:800;
+  color:#fff;
+  text-decoration:none;
+  letter-spacing:.2px;
+}
+.marca span { color:var(--sol); }
+nav { display:flex;flex-wrap:wrap;align-items:center;gap:6px 16px; }
+nav a { color:#e4edf4;text-decoration:none;font-weight:600; }
+nav a:hover { color:#fff;text-decoration:underline; }
+nav a.ir-visita {
+  background:var(--laranja);
+  color:#fff;
+  padding:8px 16px;
+  border-radius:6px;
+}
+nav a.ir-visita:hover { background:var(--laranja-esc);text-decoration:none; }
 
-  .hero { background: var(--marinho); color: #fff; }
-  .hero-in { max-width: 1000px; margin: 0 auto; padding: 36px 20px 20px; }
-  h1 { font-size: clamp(2.1rem, 7vw, 3.5rem); line-height: 1.08; margin: 0 0 14px; max-width: 18ch; }
-  .hero p { color: #c9d9e6; max-width: 56ch; font-size: 1.1rem; margin: 0 0 22px; }
-  .skyline { display: block; width: 100%; height: auto; margin-top: 18px; }
+.hero { background:var(--marinho);color:#fff; }
+.hero-in {
+  max-width:1000px;
+  margin:0 auto;
+  padding:36px 20px 20px;
+}
+h1 {
+  font-size:clamp(2.1rem,7vw,3.5rem);
+  line-height:1.08;
+  margin:0 0 14px;
+  max-width:18ch;
+}
+.hero p { color:#c9d9e6;max-width:56ch;font-size:1.1rem;margin:0 0 22px; }
+.skyline { display:block;width:100%;height:auto;margin-top:18px; }
 
-  main { max-width: 1000px; margin: 0 auto; padding: 0 20px 90px; }
-  h2 { font-size: 1.8rem; margin: 0 0 8px; }
-  h3 { margin: 0; }
-  .intro { color: var(--suave); max-width: 60ch; margin: 0 0 18px; }
+main { max-width:1000px;margin:0 auto;padding:0 20px 90px; }
+h2 { font-size:1.8rem;margin:0 0 8px; }
+h3 { margin:0; }
+.intro { color:var(--suave);max-width:60ch;margin:0 0 18px; }
 
-  .botao { display: inline-block; background: var(--laranja); color: #fff; border: 0; padding: 10px 20px; border-radius: 6px; font-weight: 700; cursor: pointer; text-decoration: none; }
-  .botao:hover { background: var(--laranja-esc); }
-  .botao.cheio { width: 100%; padding: 13px; text-align: center; }
-  .botao.claro { background: transparent; color: #fff; border: 1px solid #fff; }
-  .botao.claro:hover { background: #fff; color: var(--marinho); }
-  .botao.escuro { background: #fff; color: var(--marinho); border: 1px solid var(--marinho); }
-  .botao.escuro:hover { background: var(--marinho); color: #fff; }
+.botao {
+  display:inline-block;
+  background:var(--laranja);
+  color:#fff;
+  border:0;
+  padding:10px 20px;
+  border-radius:6px;
+  font-weight:700;
+  cursor:pointer;
+  text-decoration:none;
+}
+.botao:hover { background:var(--laranja-esc); }
+.botao.cheio { width:100%;padding:13px;text-align:center; }
+.botao.claro { background:transparent;color:#fff;border:1px solid #fff; }
+.botao.claro:hover { background:#fff;color:var(--marinho); }
+.botao.escuro { background:#fff;color:var(--marinho);border:1px solid var(--marinho); }
+.botao.escuro:hover { background:var(--marinho);color:#fff; }
 
-  #imoveis { padding-top: 36px; }
-  .filtros { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); background: var(--papel); padding: 16px; border-radius: 10px; margin-bottom: 14px; }
-  .filtros label { display: block; font-size: .85rem; font-weight: 700; margin-bottom: 4px; color: var(--suave); }
-  .filtros select { width: 100%; padding: 9px; border: 1px solid var(--linha); border-radius: 6px; background: #fff; }
-  .negocio { display: flex; gap: 6px; }
-  .negocio button { flex: 1; background: #fff; border: 1px solid var(--marinho); border-radius: 6px; padding: 8px 4px; cursor: pointer; font-weight: 600; }
-  .negocio button[aria-pressed="true"] { background: var(--marinho); color: #fff; }
-  #contagem { color: var(--suave); margin: 0 0 12px; font-weight: 600; }
+#imoveis { padding-top:36px; }
+.filtros {
+  display:grid;
+  gap:12px;
+  grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+  background:var(--papel);
+  padding:16px;
+  border-radius:10px;
+  margin-bottom:14px;
+}
+.filtros label {
+  display:block;
+  font-size:.85rem;
+  font-weight:700;
+  margin-bottom:4px;
+  color:var(--suave);
+}
+.filtros select {
+  width:100%;
+  padding:9px;
+  border:1px solid var(--linha);
+  border-radius:6px;
+  background:#fff;
+}
+.negocio { display:flex;gap:6px; }
+.negocio button {
+  flex:1;
+  background:#fff;
+  border:1px solid var(--marinho);
+  border-radius:6px;
+  padding:8px 4px;
+  cursor:pointer;
+  font-weight:600;
+}
+.negocio button[aria-pressed="true"] { background:var(--marinho);color:#fff; }
+#contagem { color:var(--suave);margin:0 0 12px;font-weight:600; }
 
-  .grelha { display: grid; gap: 18px; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
-  .imovel { background: var(--papel); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--linha); }
-  .imovel[hidden] { display: none; }
-  .foto { position: relative; }
-  .foto img { display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
-  .etiqueta { position: absolute; top: 10px; left: 10px; background: var(--marinho); color: #fff; padding: 3px 10px; border-radius: 4px; font-size: .8rem; font-weight: 700; }
-  .etiqueta.arr { background: var(--laranja-esc); }
-  .corpo { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
-  .corpo h3 { font-size: 1.1rem; }
-  .local { color: var(--suave); font-size: .92rem; margin: 0; }
-  .meta { display: flex; flex-wrap: wrap; gap: 4px 14px; margin: 2px 0; font-size: .92rem; }
-  .desc { color: var(--suave); font-size: .92rem; margin: 0; flex: 1; }
-  .preco { font-size: 1.3rem; font-weight: 800; color: var(--marinho); }
-  .preco small { font-size: .85rem; font-weight: 600; color: var(--suave); }
-  .acoes { display: flex; gap: 8px; margin-top: 6px; }
-  .acoes .botao { flex: 1; padding: 9px 10px; text-align: center; }
-  .acoes button[aria-pressed="true"] { background: var(--marinho); color: #fff; }
-  .vazio-res { background: var(--papel); border-radius: 10px; padding: 20px; color: var(--suave); }
+.grelha {
+  display:grid;
+  gap:18px;
+  grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+}
+.imovel {
+  background:var(--papel);
+  border-radius:12px;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  border:1px solid var(--linha);
+}
+.imovel[hidden] { display:none; }
+.foto { position:relative; }
+.foto img {
+  display:block;
+  width:100%;
+  aspect-ratio:3/2;
+  object-fit:cover;
+}
+.etiqueta {
+  position:absolute;
+  top:10px;
+  left:10px;
+  background:var(--marinho);
+  color:#fff;
+  padding:3px 10px;
+  border-radius:4px;
+  font-size:.8rem;
+  font-weight:700;
+}
+.etiqueta.arr { background:var(--laranja-esc); }
+.corpo {
+  padding:14px 16px 16px;
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  flex:1;
+}
+.corpo h3 { font-size:1.1rem; }
+.local { color:var(--suave);font-size:.92rem;margin:0; }
+.meta { display:flex;flex-wrap:wrap;gap:4px 14px;margin:2px 0;font-size:.92rem; }
+.desc { color:var(--suave);font-size:.92rem;margin:0;flex:1; }
+.preco { font-size:1.3rem;font-weight:800;color:var(--marinho); }
+.preco small { font-size:.85rem;font-weight:600;color:var(--suave); }
+.acoes { display:flex;gap:8px;margin-top:6px; }
+.acoes .botao { flex:1;padding:9px 10px;text-align:center; }
+.acoes button[aria-pressed="true"] { background:var(--marinho);color:#fff; }
+.vazio-res { background:var(--papel);border-radius:10px;padding:20px;color:var(--suave); }
 
-  #visita { margin-top: 44px; background: var(--marinho); color: #fff; border-radius: 12px; padding: 26px 20px; }
-  #visita h2 { color: #fff; }
-  #visita .intro { color: #c9d9e6; }
-  #lista { list-style: none; margin: 0 0 14px; padding: 0; }
-  #lista li { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px dashed #4a6a85; }
-  #lista .nome { font-weight: 600; }
-  #lista .sub { font-size: .88rem; color: #b6cadb; }
-  #lista button { background: transparent; border: 1px solid #b6cadb; color: #fff; border-radius: 999px; padding: 5px 12px; cursor: pointer; }
-  .vazio { color: #b6cadb; }
-  .formulario { display: grid; gap: 10px; }
-  .formulario label { font-weight: 600; font-size: .95rem; }
-  .formulario input, .formulario textarea { width: 100%; padding: 10px; border: 1px solid #4a6a85; border-radius: 6px; background: #fff; color: var(--texto); }
-  .linha2 { display: grid; gap: 10px; grid-template-columns: 1fr 1fr; }
-  .aviso { font-size: .88rem; color: #b6cadb; margin: 4px 0 0; }
-  .erro { color: #ffb4a8; font-weight: 700; min-height: 1.4em; margin: 0; }
+#visita {
+  margin-top:44px;
+  background:var(--marinho);
+  color:#fff;
+  border-radius:12px;
+  padding:26px 20px;
+}
+#visita h2 { color:#fff; }
+#visita .intro { color:#c9d9e6; }
+#lista { list-style:none;margin:0 0 14px;padding:0; }
+#lista li {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+  padding:10px 0;
+  border-bottom:1px dashed #4a6a85;
+}
+#lista .nome { font-weight:600; }
+#lista .sub { font-size:.88rem;color:#b6cadb; }
+#lista button {
+  background:transparent;
+  border:1px solid #b6cadb;
+  color:#fff;
+  border-radius:999px;
+  padding:5px 12px;
+  cursor:pointer;
+}
+.vazio { color:#b6cadb; }
+.formulario { display:grid;gap:10px; }
+.formulario label { font-weight:600;font-size:.95rem; }
+.formulario input,.formulario textarea {
+  width:100%;
+  padding:10px;
+  border:1px solid #4a6a85;
+  border-radius:6px;
+  background:#fff;
+  color:var(--texto);
+}
+.linha2 { display:grid;gap:10px;grid-template-columns:1fr 1fr; }
+.aviso { font-size:.88rem;color:#b6cadb;margin:4px 0 0; }
+.erro { color:#ffb4a8;font-weight:700;min-height:1.4em;margin:0; }
 
-  #sobre { margin-top: 44px; background: var(--papel); border-radius: 12px; padding: 28px 22px; }
-  #sobre p { max-width: 62ch; margin: 0 0 12px; }
-  #sobre h3 { font-size: 1.3rem; margin: 24px 0 10px; }
-  .valores { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
-  .valores div { background: var(--fundo); border-radius: 8px; padding: 16px; }
-  .valores h4 { margin: 0 0 6px; font-size: 1.05rem; color: var(--marinho); }
-  .valores p { margin: 0; font-size: .95rem; }
-  .numeros { display: flex; flex-wrap: wrap; gap: 14px 34px; margin: 18px 0 0; }
-  .numeros div { min-width: 110px; }
-  .numeros strong { display: block; font-size: 1.9rem; color: var(--laranja-esc); line-height: 1.1; }
-  .numeros span { color: var(--suave); font-size: .9rem; }
+#sobre { margin-top:44px;background:var(--papel);border-radius:12px;padding:28px 22px; }
+#sobre p { max-width:62ch;margin:0 0 12px; }
+#sobre h3 { font-size:1.3rem;margin:24px 0 10px; }
+.valores { display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); }
+.valores div { background:var(--fundo);border-radius:8px;padding:16px; }
+.valores h4 { margin:0 0 6px;font-size:1.05rem;color:var(--marinho); }
+.valores p { margin:0;font-size:.95rem; }
+.numeros { display:flex;flex-wrap:wrap;gap:14px 34px;margin:18px 0 0; }
+.numeros div { min-width:110px; }
+.numeros strong { display:block;font-size:1.9rem;color:var(--laranja-esc);line-height:1.1; }
+.numeros span { color:var(--suave);font-size:.9rem; }
 
-  #contacto { margin-top: 44px; }
-  .info { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
-  .info div { background: var(--papel); border-radius: 12px; padding: 20px; border: 1px solid var(--linha); }
-  .info h3 { font-size: 1.1rem; margin-bottom: 8px; }
-  .info p { margin: 0 0 6px; }
+#contacto { margin-top:44px; }
+.info { display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); }
+.info div { background:var(--papel);border-radius:12px;padding:20px;border:1px solid var(--linha); }
+.info h3 { font-size:1.1rem;margin-bottom:8px; }
+.info p { margin:0 0 6px; }
 
-  .barra { position: fixed; left: 0; right: 0; bottom: 0; background: var(--laranja-esc); color: #fff; padding: 12px 20px; display: none; justify-content: space-between; align-items: center; gap: 12px; z-index: 5; }
-  .barra a { background: #fff; color: var(--marinho); padding: 8px 16px; border-radius: 6px; font-weight: 700; text-decoration: none; }
-  footer { text-align: center; color: var(--suave); font-size: .9rem; padding: 0 20px 100px; }
-  @media (max-width: 420px) { .linha2 { grid-template-columns: 1fr; } }
-  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+.barra {
+  position:fixed;
+  left:0;
+  right:0;
+  bottom:0;
+  background:var(--laranja-esc);
+  color:#fff;
+  padding:12px 20px;
+  display:none;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  z-index:5;
+}
+.barra a {
+  background:#fff;
+  color:var(--marinho);
+  padding:8px 16px;
+  border-radius:6px;
+  font-weight:700;
+  text-decoration:none;
+}
+footer { text-align:center;color:var(--suave);font-size:.9rem;padding:0 20px 100px; }
+
+@media(max-width:420px) {
+  .linha2 { grid-template-columns:1fr; }
+}
+@media(prefers-reduced-motion:reduce) {
+  html { scroll-behavior:auto; }
+}
 </style>
 </head>
+
 <body>
+
 <header class="topo">
   <div class="topo-in">
     <a class="marca" href="#inicio">Lar <span>Certo</span></a>
@@ -140,83 +301,124 @@
   <div class="hero-in">
     <h1>Encontre o lugar certo para viver ou investir.</h1>
     <p>Apartamentos, moradias, terrenos e lojas para comprar ou arrendar em Maputo, Matola e Beira. Guarde os que gostar e agende a visita por WhatsApp.</p>
-    <a class="botao" href="#imoveis">Ver imóveis</a> <a class="botao claro" href="#visita">Agendar visita</a>
+    <a class="botao" href="#imoveis">Ver imóveis</a>
+    <a class="botao claro" href="#visita">Agendar visita</a>
   </div>
-<img class="skyline" src="./skyline.svg" alt=""></div>
+
+  <!-- CAMINHO CORRIGIDO -->
+  <img class="skyline" src="./skyline.svg" alt="Ilustração da cidade">
+</div>
 
 <main>
-  <section id="imoveis" aria-labelledby="titulo-imoveis">
-    <h2 id="titulo-imoveis">Imóveis disponíveis</h2>
-    <p class="intro">Os preços estão em meticais (MT). Os de arrendamento são por mês.</p>
-    <div class="filtros">
-      <div><label id="rot-negocio">Quero</label><div class="negocio" id="negocio" role="group" aria-labelledby="rot-negocio"></div></div>
-      <div><label for="f-tipo">Tipo</label><select id="f-tipo"></select></div>
-      <div><label for="f-cidade">Cidade</label><select id="f-cidade"></select></div>
-    </div>
-    <p id="contagem" aria-live="polite"></p>
-    <div class="grelha" id="lista-imoveis"></div>
-    <p class="vazio-res" id="sem-res" hidden>Nenhum imóvel encontrado com estes filtros. Experimente mudar o tipo ou a cidade.</p>
-  </section>
 
-  <section id="visita" aria-labelledby="titulo-visita">
-    <h2 id="titulo-visita">Agende uma visita</h2>
-    <p class="intro">Guarde imóveis com o botão "Guardar" e eles aparecem aqui. Também pode agendar sem escolher nenhum.</p>
-    <ul id="lista"></ul>
-    <p class="vazio" id="vazio">Ainda não guardou nenhum imóvel.</p>
-    <div class="formulario">
-      <label for="nome">O seu nome</label>
-      <input id="nome" type="text" autocomplete="name">
-      <div class="linha2">
-        <div><label for="data">Dia preferido</label><input id="data" type="date"></div>
-        <div><label for="hora">Hora preferida</label><input id="hora" type="time" value="10:00"></div>
-      </div>
-      <label for="nota">Notas (orçamento, prazos, preferências...)</label>
-      <textarea id="nota" rows="2"></textarea>
-      <p class="erro" id="erro" role="alert"></p>
-      <button class="botao cheio" id="enviar" type="button">Agendar por WhatsApp</button>
-      <button class="botao cheio claro" id="limpar" type="button">Limpar guardados</button>
-      <p class="aviso">O agendamento não tem custo nem compromisso. Confirmamos o dia e a hora consigo por WhatsApp.</p>
-    </div>
-  </section>
+<section id="imoveis" aria-labelledby="titulo-imoveis">
+  <h2 id="titulo-imoveis">Imóveis disponíveis</h2>
+  <p class="intro">Os preços estão em meticais (MT). Os de arrendamento são por mês.</p>
 
-  <section id="sobre" aria-labelledby="titulo-sobre">
-    <h2 id="titulo-sobre">Sobre nós</h2>
-    <p>A Lar Certo nasceu em 2015, em Maputo, com uma ideia simples: comprar, vender ou arrendar casa deve ser um processo claro e seguro. Começámos com dois consultores e hoje acompanhamos famílias, investidores e empresas em várias cidades do país.</p>
-    <p>Conhecemos os bairros, os preços de mercado e a documentação necessária, para que decida com informação.</p>
-    <h3>No que acreditamos</h3>
-    <div class="valores">
-      <div><h4>Transparência</h4><p>Preços claros e informação verdadeira sobre cada imóvel, incluindo o que precisa de obras.</p></div>
-      <div><h4>Segurança jurídica</h4><p>Verificamos a documentação (DUAT, escritura e registo) antes de anunciar.</p></div>
-      <div><h4>Acompanhamento</h4><p>Do primeiro contacto à entrega das chaves, tem sempre um consultor ao seu lado.</p></div>
+  <div class="filtros">
+    <div>
+      <label id="rot-negocio">Quero</label>
+      <div class="negocio" id="negocio" role="group" aria-labelledby="rot-negocio"></div>
     </div>
-    <div class="numeros">
-      <div><strong>+10</strong><span>anos de experiência</span></div>
-      <div><strong>3</strong><span>cidades</span></div>
-      <div><strong>Visitas</strong><span>sem compromisso</span></div>
+    <div>
+      <label for="f-tipo">Tipo</label>
+      <select id="f-tipo"></select>
     </div>
-  </section>
+    <div>
+      <label for="f-cidade">Cidade</label>
+      <select id="f-cidade"></select>
+    </div>
+  </div>
 
-  <section id="contacto" aria-labelledby="titulo-contacto">
-    <h2 id="titulo-contacto">Fale connosco</h2>
-    <div class="info">
+  <p id="contagem" aria-live="polite"></p>
+  <div class="grelha" id="lista-imoveis"></div>
+  <p class="vazio-res" id="sem-res" hidden>Nenhum imóvel encontrado com estes filtros. Experimente mudar o tipo ou a cidade.</p>
+</section>
+
+<section id="visita" aria-labelledby="titulo-visita">
+  <h2 id="titulo-visita">Agende uma visita</h2>
+  <p class="intro">Guarde imóveis com o botão "Guardar" e eles aparecem aqui. Também pode agendar sem escolher nenhum.</p>
+
+  <ul id="lista"></ul>
+  <p class="vazio" id="vazio">Ainda não guardou nenhum imóvel.</p>
+
+  <div class="formulario">
+    <label for="nome">O seu nome</label>
+    <input id="nome" type="text" autocomplete="name">
+
+    <div class="linha2">
       <div>
-        <h3>Horário</h3>
-        <p>Segunda a sexta: 8h00 – 17h30</p>
-        <p>Sábado: 8h00 – 13h00</p>
-        <p>Domingo: visitas com marcação</p>
+        <label for="data">Dia preferido</label>
+        <input id="data" type="date">
       </div>
       <div>
-        <h3>Escritório</h3>
-        <p>Av. Julius Nyerere, 340</p>
-        <p>Maputo, Moçambique</p>
-      </div>
-      <div>
-        <h3>Contactos</h3>
-        <p>Telefone / WhatsApp: <a href="tel:+258840000000">84 000 0000</a></p>
-        <p>Email: <a href="mailto:ola@larcerto.co.mz">ola@larcerto.co.mz</a></p>
+        <label for="hora">Hora preferida</label>
+        <input id="hora" type="time" value="10:00">
       </div>
     </div>
-  </section>
+
+    <label for="nota">Notas (orçamento, prazos, preferências...)</label>
+    <textarea id="nota" rows="2"></textarea>
+
+    <p class="erro" id="erro" role="alert"></p>
+
+    <button class="botao cheio" id="enviar" type="button">Agendar por WhatsApp</button>
+    <button class="botao cheio claro" id="limpar" type="button">Limpar guardados</button>
+
+    <p class="aviso">O agendamento não tem custo nem compromisso. Confirmamos o dia e a hora consigo por WhatsApp.</p>
+  </div>
+</section>
+
+<section id="sobre" aria-labelledby="titulo-sobre">
+  <h2 id="titulo-sobre">Sobre nós</h2>
+  <p>A Lar Certo nasceu em 2015, em Maputo, com uma ideia simples: comprar, vender ou arrendar casa deve ser um processo claro e seguro. Começámos com dois consultores e hoje acompanhamos famílias, investidores e empresas em várias cidades do país.</p>
+  <p>Conhecemos os bairros, os preços de mercado e a documentação necessária, para que decida com informação.</p>
+
+  <h3>No que acreditamos</h3>
+  <div class="valores">
+    <div>
+      <h4>Transparência</h4>
+      <p>Preços claros e informação verdadeira sobre cada imóvel, incluindo o que precisa de obras.</p>
+    </div>
+    <div>
+      <h4>Segurança jurídica</h4>
+      <p>Verificamos a documentação (DUAT, escritura e registo) antes de anunciar.</p>
+    </div>
+    <div>
+      <h4>Acompanhamento</h4>
+      <p>Do primeiro contacto à entrega das chaves, tem sempre um consultor ao seu lado.</p>
+    </div>
+  </div>
+
+  <div class="numeros">
+    <div><strong>+10</strong><span>anos de experiência</span></div>
+    <div><strong>3</strong><span>cidades</span></div>
+    <div><strong>Visitas</strong><span>sem compromisso</span></div>
+  </div>
+</section>
+
+<section id="contacto">
+  <h2 id="titulo-contacto">Fale connosco</h2>
+  <div class="info">
+    <div>
+      <h3>Horário</h3>
+      <p>Segunda a sexta: 8h00 – 17h30</p>
+      <p>Sábado: 8h00 – 13h00</p>
+      <p>Domingo: visitas com marcação</p>
+    </div>
+    <div>
+      <h3>Escritório</h3>
+      <p>Av. Julius Nyerere, 340</p>
+      <p>Maputo, Moçambique</p>
+    </div>
+    <div>
+      <h3>Contactos</h3>
+      <p>Telefone / WhatsApp: <a href="tel:+258840000000">84 000 0000</a></p>
+      <p>Email: <a href="mailto:ola@larcerto.co.mz">ola@larcerto.co.mz</a></p>
+    </div>
+  </div>
+</section>
+
 </main>
 
 <footer>© 2026 Lar Certo Imobiliária · Av. Julius Nyerere, 340, Maputo</footer>
@@ -227,161 +429,367 @@
 </div>
 
 <script>
-  // ---- Edite aqui os seus dados ----
-  var TELEFONE = "258840000000"; // WhatsApp com indicativo (258 = Moçambique), sem + nem espaços
-  var IMOVEIS = [
-    { id: "a1", negocio: "Comprar", tipo: "Apartamento", cidade: "Maputo", bairro: "Polana", titulo: "Apartamento T3 com varanda", preco: 9500000, q: 3, wc: 2, area: 140, desc: "Andar alto, cozinha equipada e garagem para dois carros." },
-    { id: "m1", negocio: "Comprar", tipo: "Moradia", cidade: "Maputo", bairro: "Sommerschield", titulo: "Moradia V4 com piscina", preco: 28000000, q: 4, wc: 4, area: 380, desc: "Jardim, piscina, quarto de serviço e segurança 24 horas." },
-    { id: "a2", negocio: "Arrendar", tipo: "Apartamento", cidade: "Maputo", bairro: "Sommerschield", titulo: "Apartamento T2 mobilado", preco: 65000, q: 2, wc: 1, area: 90, desc: "Totalmente mobilado, perto de escolas e supermercados." },
-    { id: "m2", negocio: "Comprar", tipo: "Moradia", cidade: "Matola", bairro: "Matola Rio", titulo: "Moradia V3 em condomínio", preco: 7800000, q: 3, wc: 2, area: 200, desc: "Condomínio fechado, quintal e espaço para ampliar." },
-    { id: "t1", negocio: "Comprar", tipo: "Terreno", cidade: "Maputo", bairro: "Costa do Sol", titulo: "Terreno de 600 m²", preco: 4200000, q: 0, wc: 0, area: 600, desc: "Terreno plano, com DUAT e acesso a água e luz." },
-    { id: "c1", negocio: "Arrendar", tipo: "Comercial", cidade: "Maputo", bairro: "Baixa", titulo: "Loja em rua movimentada", preco: 120000, q: 0, wc: 1, area: 70, desc: "Montra grande, armazém nas traseiras e ar condicionado." },
-    { id: "a3", negocio: "Arrendar", tipo: "Apartamento", cidade: "Maputo", bairro: "Alto-Maé", titulo: "Apartamento T1 renovado", preco: 35000, q: 1, wc: 1, area: 55, desc: "Recém-renovado, ideal para uma pessoa ou casal." },
-    { id: "m3", negocio: "Arrendar", tipo: "Moradia", cidade: "Beira", bairro: "Macuti", titulo: "Moradia V3 perto da praia", preco: 80000, q: 3, wc: 2, area: 220, desc: "A poucos minutos da praia, com quintal e varanda." }
-  ];
 
-  // ---- Estado ----
-  var favoritos = {};
-  try { favoritos = JSON.parse(localStorage.getItem("favoritos-imobiliaria")) || {}; } catch (e) { favoritos = {}; }
-  var filtro = { negocio: "Todos", tipo: "Todos", cidade: "Todas" };
+// ---- EDITE AQUI OS SEUS DADOS ----
+var TELEFONE = "258840000000";
 
-  function mt(n) { return n.toLocaleString("pt-PT") + " MT"; }
-  function guardar() { try { localStorage.setItem("favoritos-imobiliaria", JSON.stringify(favoritos)); } catch (e) {} }
-  function achar(id) { for (var i = 0; i < IMOVEIS.length; i++) if (IMOVEIS[i].id === id) return IMOVEIS[i]; return null; }
-  function unicos(campo) { var r = []; IMOVEIS.forEach(function (p) { if (r.indexOf(p[campo]) < 0) r.push(p[campo]); }); return r; }
+var IMOVEIS = [
+  { id:"a1", negocio:"Comprar", tipo:"Apartamento", cidade:"Maputo", bairro:"Polana", titulo:"Apartamento T3 com varanda", preco:9500000, q:3, wc:2, area:140, desc:"Andar alto, cozinha equipada e garagem para dois carros." },
+  { id:"m1", negocio:"Comprar", tipo:"Moradia", cidade:"Maputo", bairro:"Sommerschield", titulo:"Moradia V4 com piscina", preco:28000000, q:4, wc:4, area:380, desc:"Jardim, piscina, quarto de serviço e segurança 24 horas." },
+  { id:"a2", negocio:"Arrendar", tipo:"Apartamento", cidade:"Maputo", bairro:"Sommerschield", titulo:"Apartamento T2 mobilado", preco:65000, q:2, wc:1, area:90, desc:"Totalmente mobilado, perto de escolas e supermercados." },
+  { id:"m2", negocio:"Comprar", tipo:"Moradia", cidade:"Matola", bairro:"Matola Rio", titulo:"Moradia V3 em condomínio", preco:7800000, q:3, wc:2, area:200, desc:"Condomínio fechado, quintal e espaço para ampliar." },
+  { id:"t1", negocio:"Comprar", tipo:"Terreno", cidade:"Maputo", bairro:"Costa do Sol", titulo:"Terreno de 600 m²", preco:4200000, q:0, wc:0, area:600, desc:"Terreno plano, com DUAT e acesso a água e luz." },
+  { id:"c1", negocio:"Arrendar", tipo:"Comercial", cidade:"Maputo", bairro:"Baixa", titulo:"Loja em rua movimentada", preco:120000, q:0, wc:1, area:70, desc:"Montra grande, armazém nas traseiras e ar condicionado." },
+  { id:"a3", negocio:"Arrendar", tipo:"Apartamento", cidade:"Maputo", bairro:"Alto-Maé", titulo:"Apartamento T1 renovado", preco:35000, q:1, wc:1, area:55, desc:"Recém-renovado, ideal para uma pessoa ou casal." },
+  { id:"m3", negocio:"Arrendar", tipo:"Moradia", cidade:"Beira", bairro:"Macuti", titulo:"Moradia V3 perto da praia", preco:80000, q:3, wc:2, area:220, desc:"A poucos minutos da praia, com quintal e varanda." }
+];
 
-  // ---- Filtros ----
-  var boxNeg = document.getElementById("negocio");
-  ["Todos", "Comprar", "Arrendar"].forEach(function (n) {
-    var b = document.createElement("button"); b.type = "button"; b.textContent = n;
-    b.setAttribute("aria-pressed", n === "Todos" ? "true" : "false");
-    b.addEventListener("click", function () {
-      Array.prototype.forEach.call(boxNeg.children, function (x) { x.setAttribute("aria-pressed", "false"); });
-      b.setAttribute("aria-pressed", "true"); filtro.negocio = n; aplicar();
-    });
-    boxNeg.appendChild(b);
-  });
-  function preencher(id, rotuloTodos, valores, chave) {
-    var sel = document.getElementById(id);
-    [rotuloTodos].concat(valores).forEach(function (v) {
-      var o = document.createElement("option"); o.value = v; o.textContent = v; sel.appendChild(o);
-    });
-    sel.addEventListener("change", function () { filtro[chave] = sel.value; aplicar(); });
+// ---- ESTADO ----
+var favoritos = {};
+try {
+  favoritos = JSON.parse(localStorage.getItem("favoritos-imobiliaria")) || {};
+} catch(e) {
+  favoritos = {};
+}
+
+var filtro = { negocio:"Todos", tipo:"Todos", cidade:"Todas" };
+
+function mt(n) {
+  return n.toLocaleString("pt-PT") + " MT";
+}
+
+function guardar() {
+  try {
+    localStorage.setItem("favoritos-imobiliaria", JSON.stringify(favoritos));
+  } catch(e) {}
+}
+
+function achar(id) {
+  for(var i=0;i<IMOVEIS.length;i++) {
+    if(IMOVEIS[i].id===id) return IMOVEIS[i];
   }
-  preencher("f-tipo", "Todos", unicos("tipo"), "tipo");
-  preencher("f-cidade", "Todas", unicos("cidade"), "cidade");
+  return null;
+}
 
-  // ---- Cartões ----
-  var grelha = document.getElementById("lista-imoveis");
-  var cartoes = [];
-  var ICONE = { "Apartamento": "tipo-apartamento", "Moradia": "tipo-moradia", "Terreno": "tipo-terreno", "Comercial": "tipo-comercial" };
-  IMOVEIS.forEach(function (p) {
-    var art = document.createElement("article"); art.className = "imovel";
+function unicos(campo) {
+  var r=[];
+  IMOVEIS.forEach(function(p) {
+    if(r.indexOf(p[campo])<0) r.push(p[campo]);
+  });
+  return r;
+}
 
-    var foto = document.createElement("div"); foto.className = "foto";
-    var img = document.createElement("img"); img.src = "imagens/" + ICONE[p.tipo] + ".svg"; img.alt = p.tipo + " em " + p.bairro; img.loading = "lazy";
-    var et = document.createElement("span"); et.className = "etiqueta" + (p.negocio === "Arrendar" ? " arr" : ""); et.textContent = p.negocio === "Arrendar" ? "Arrendar" : "Venda";
-    foto.appendChild(img); foto.appendChild(et);
+// ---- FILTROS ----
+var boxNeg=document.getElementById("negocio");
 
-    var corpo = document.createElement("div"); corpo.className = "corpo";
-    var h = document.createElement("h3"); h.textContent = p.titulo;
-    var loc = document.createElement("p"); loc.className = "local"; loc.textContent = p.bairro + ", " + p.cidade;
-    var meta = document.createElement("div"); meta.className = "meta";
-    var partes = [];
-    if (p.q) partes.push(p.q + (p.q === 1 ? " quarto" : " quartos"));
-    if (p.wc) partes.push(p.wc + " WC");
-    partes.push(p.area + " m²");
-    partes.forEach(function (t) { var s = document.createElement("span"); s.textContent = t; meta.appendChild(s); });
-    var d = document.createElement("p"); d.className = "desc"; d.textContent = p.desc;
-    var pr = document.createElement("div"); pr.className = "preco"; pr.textContent = mt(p.preco);
-    if (p.negocio === "Arrendar") { var sm = document.createElement("small"); sm.textContent = " /mês"; pr.appendChild(sm); }
+["Todos","Comprar","Arrendar"].forEach(function(n) {
+  var b=document.createElement("button");
+  b.type="button";
+  b.textContent=n;
+  b.setAttribute("aria-pressed",n==="Todos"?"true":"false");
 
-    var ac = document.createElement("div"); ac.className = "acoes";
-    var fav = document.createElement("button"); fav.type = "button"; fav.className = "botao escuro";
-    fav.addEventListener("click", function () {
-      if (favoritos[p.id]) delete favoritos[p.id]; else favoritos[p.id] = true;
+  b.addEventListener("click",function() {
+    Array.prototype.forEach.call(boxNeg.children,function(x) {
+      x.setAttribute("aria-pressed","false");
+    });
+    b.setAttribute("aria-pressed","true");
+    filtro.negocio=n;
+    aplicar();
+  });
+
+  boxNeg.appendChild(b);
+});
+
+function preencher(id,rotuloTodos,valores,chave) {
+  var sel=document.getElementById(id);
+
+  [rotuloTodos].concat(valores).forEach(function(v) {
+    var o=document.createElement("option");
+    o.value=v;
+    o.textContent=v;
+    sel.appendChild(o);
+  });
+
+  sel.addEventListener("change",function() {
+    filtro[chave]=sel.value;
+    aplicar();
+  });
+}
+
+preencher("f-tipo","Todos",unicos("tipo"),"tipo");
+preencher("f-cidade","Todas",unicos("cidade"),"cidade");
+
+// ---- CARTOES DOS IMOVEIS ----
+var grelha=document.getElementById("lista-imoveis");
+var cartoes=[];
+
+var ICONE={
+  "Apartamento":"tipo-apartamento",
+  "Moradia":"tipo-moradia",
+  "Terreno":"tipo-terreno",
+  "Comercial":"tipo-comercial"
+};
+
+IMOVEIS.forEach(function(p) {
+  var art=document.createElement("article");
+  art.className="imovel";
+
+  var foto=document.createElement("div");
+  foto.className="foto";
+
+  var img=document.createElement("img");
+
+  // CAMINHO CORRIGIDO: IMAGENS NA RAIZ DO REPOSITORIO
+  img.src="./"+ICONE[p.tipo]+".svg";
+  img.alt=p.tipo+" em "+p.bairro;
+  img.loading="lazy";
+
+  // Caso a imagem nao seja encontrada
+  img.onerror=function() {
+    this.style.display="none";
+  };
+
+  var et=document.createElement("span");
+  et.className="etiqueta"+(p.negocio==="Arrendar"?" arr":"");
+  et.textContent=p.negocio==="Arrendar"?"Arrendar":"Venda";
+
+  foto.appendChild(img);
+  foto.appendChild(et);
+
+  var corpo=document.createElement("div");
+  corpo.className="corpo";
+
+  var h=document.createElement("h3");
+  h.textContent=p.titulo;
+
+  var loc=document.createElement("p");
+  loc.className="local";
+  loc.textContent=p.bairro+", "+p.cidade;
+
+  var meta=document.createElement("div");
+  meta.className="meta";
+
+  var partes=[];
+  if(p.q) partes.push(p.q+(p.q===1?" quarto":" quartos"));
+  if(p.wc) partes.push(p.wc+" WC");
+  partes.push(p.area+" m²");
+
+  partes.forEach(function(t) {
+    var s=document.createElement("span");
+    s.textContent=t;
+    meta.appendChild(s);
+  });
+
+  var d=document.createElement("p");
+  d.className="desc";
+  d.textContent=p.desc;
+
+  var pr=document.createElement("div");
+  pr.className="preco";
+  pr.textContent=mt(p.preco);
+
+  if(p.negocio==="Arrendar") {
+    var sm=document.createElement("small");
+    sm.textContent=" /mês";
+    pr.appendChild(sm);
+  }
+
+  var ac=document.createElement("div");
+  ac.className="acoes";
+
+  var fav=document.createElement("button");
+  fav.type="button";
+  fav.className="botao escuro";
+
+  fav.addEventListener("click",function() {
+    if(favoritos[p.id]) {
+      delete favoritos[p.id];
+    } else {
+      favoritos[p.id]=true;
+    }
+    sincronizar();
+  });
+
+  var ag=document.createElement("a");
+  ag.className="botao";
+  ag.href="#visita";
+  ag.textContent="Agendar";
+
+  ag.addEventListener("click",function() {
+    favoritos[p.id]=true;
+    sincronizar();
+  });
+
+  ac.appendChild(fav);
+  ac.appendChild(ag);
+
+  corpo.appendChild(h);
+  corpo.appendChild(loc);
+  corpo.appendChild(meta);
+  corpo.appendChild(d);
+  corpo.appendChild(pr);
+  corpo.appendChild(ac);
+
+  art.appendChild(foto);
+  art.appendChild(corpo);
+
+  grelha.appendChild(art);
+  cartoes.push({el:art,p:p,fav:fav});
+});
+
+// ---- APLICAR FILTROS ----
+function aplicar() {
+  var n=0;
+
+  cartoes.forEach(function(c) {
+    var ok=
+      (filtro.negocio==="Todos"||c.p.negocio===filtro.negocio)&&
+      (filtro.tipo==="Todos"||c.p.tipo===filtro.tipo)&&
+      (filtro.cidade==="Todas"||c.p.cidade===filtro.cidade);
+
+    c.el.hidden=!ok;
+    if(ok) n++;
+  });
+
+  document.getElementById("contagem").textContent=
+    n+(n===1?" imóvel encontrado":" imóveis encontrados");
+
+  document.getElementById("sem-res").hidden=n!==0;
+}
+
+// ---- FAVORITOS E VISITAS ----
+function sincronizar() {
+  cartoes.forEach(function(c) {
+    var on=!!favoritos[c.p.id];
+
+    c.fav.setAttribute("aria-pressed",on?"true":"false");
+    c.fav.textContent=on?"♥ Guardado":"♡ Guardar";
+  });
+
+  var lista=document.getElementById("lista");
+  lista.innerHTML="";
+
+  var ids=Object.keys(favoritos).filter(function(id) {
+    return achar(id);
+  });
+
+  ids.forEach(function(id) {
+    var p=achar(id);
+
+    var li=document.createElement("li");
+    var info=document.createElement("div");
+
+    var nm=document.createElement("div");
+    nm.className="nome";
+    nm.textContent=p.titulo;
+
+    var sb=document.createElement("div");
+    sb.className="sub";
+    sb.textContent=p.bairro+", "+p.cidade+" · "+mt(p.preco)+
+      (p.negocio==="Arrendar"?" /mês":"");
+
+    info.appendChild(nm);
+    info.appendChild(sb);
+
+    var rem=document.createElement("button");
+    rem.type="button";
+    rem.textContent="Remover";
+    rem.setAttribute("aria-label","Remover "+p.titulo);
+
+    rem.addEventListener("click",function() {
+      delete favoritos[id];
       sincronizar();
     });
-    var ag = document.createElement("a"); ag.className = "botao"; ag.href = "#visita"; ag.textContent = "Agendar";
-    ag.addEventListener("click", function () { favoritos[p.id] = true; sincronizar(); });
-    ac.appendChild(fav); ac.appendChild(ag);
 
-    corpo.appendChild(h); corpo.appendChild(loc); corpo.appendChild(meta); corpo.appendChild(d); corpo.appendChild(pr); corpo.appendChild(ac);
-    art.appendChild(foto); art.appendChild(corpo);
-    grelha.appendChild(art);
-    cartoes.push({ el: art, p: p, fav: fav });
+    li.appendChild(info);
+    li.appendChild(rem);
+    lista.appendChild(li);
   });
 
-  function aplicar() {
-    var n = 0;
-    cartoes.forEach(function (c) {
-      var ok = (filtro.negocio === "Todos" || c.p.negocio === filtro.negocio) &&
-               (filtro.tipo === "Todos" || c.p.tipo === filtro.tipo) &&
-               (filtro.cidade === "Todas" || c.p.cidade === filtro.cidade);
-      c.el.hidden = !ok; if (ok) n++;
-    });
-    document.getElementById("contagem").textContent = n + (n === 1 ? " imóvel encontrado" : " imóveis encontrados");
-    document.getElementById("sem-res").hidden = n !== 0;
+  document.getElementById("vazio").style.display=ids.length?"none":"block";
+  document.getElementById("cont-topo").textContent=ids.length;
+  document.getElementById("cont-barra").textContent=ids.length;
+  document.getElementById("barra").style.display=ids.length?"flex":"none";
+
+  guardar();
+}
+
+// ---- WHATSAPP ----
+document.getElementById("enviar").addEventListener("click",function() {
+  var erro=document.getElementById("erro");
+
+  var nome=document.getElementById("nome").value.trim();
+  var data=document.getElementById("data").value;
+  var hora=document.getElementById("hora").value;
+  var nota=document.getElementById("nota").value.trim();
+
+  if(!nome) {
+    erro.textContent="Escreva o seu nome para agendar.";
+    document.getElementById("nome").focus();
+    return;
   }
 
-  // ---- Guardados / visita ----
-  function sincronizar() {
-    cartoes.forEach(function (c) {
-      var on = !!favoritos[c.p.id];
-      c.fav.setAttribute("aria-pressed", on ? "true" : "false");
-      c.fav.textContent = on ? "♥ Guardado" : "♡ Guardar";
-    });
-    var lista = document.getElementById("lista");
-    lista.innerHTML = "";
-    var ids = Object.keys(favoritos).filter(function (id) { return achar(id); });
-    ids.forEach(function (id) {
-      var p = achar(id);
-      var li = document.createElement("li");
-      var info = document.createElement("div");
-      var nm = document.createElement("div"); nm.className = "nome"; nm.textContent = p.titulo;
-      var sb = document.createElement("div"); sb.className = "sub"; sb.textContent = p.bairro + ", " + p.cidade + " · " + mt(p.preco) + (p.negocio === "Arrendar" ? " /mês" : "");
-      info.appendChild(nm); info.appendChild(sb);
-      var rem = document.createElement("button"); rem.type = "button"; rem.textContent = "Remover";
-      rem.setAttribute("aria-label", "Remover " + p.titulo);
-      rem.addEventListener("click", function () { delete favoritos[id]; sincronizar(); });
-      li.appendChild(info); li.appendChild(rem); lista.appendChild(li);
-    });
-    document.getElementById("vazio").style.display = ids.length ? "none" : "block";
-    document.getElementById("cont-topo").textContent = ids.length;
-    document.getElementById("cont-barra").textContent = ids.length;
-    document.getElementById("barra").style.display = ids.length ? "flex" : "none";
-    guardar();
+  if(!data) {
+    erro.textContent="Escolha o dia preferido para a visita.";
+    document.getElementById("data").focus();
+    return;
   }
 
-  document.getElementById("enviar").addEventListener("click", function () {
-    var erro = document.getElementById("erro");
-    var nome = document.getElementById("nome").value.trim();
-    var data = document.getElementById("data").value;
-    var hora = document.getElementById("hora").value;
-    var nota = document.getElementById("nota").value.trim();
-    if (!nome) { erro.textContent = "Escreva o seu nome para agendar."; document.getElementById("nome").focus(); return; }
-    if (!data) { erro.textContent = "Escolha o dia preferido para a visita."; document.getElementById("data").focus(); return; }
-    erro.textContent = "";
-    var ids = Object.keys(favoritos).filter(function (id) { return achar(id); });
-    var linhas = ["Olá! Quero agendar uma visita" + (ids.length ? " aos seguintes imóveis:" : " para ver imóveis."), ""];
-    ids.forEach(function (id) {
-      var p = achar(id);
-      linhas.push("- " + p.titulo + " (" + p.bairro + ", " + p.cidade + ") — " + mt(p.preco) + (p.negocio === "Arrendar" ? " /mês" : ""));
-    });
-    if (ids.length) linhas.push("");
-    linhas.push("Nome: " + nome, "Dia preferido: " + data.split("-").reverse().join("/") + (hora ? " às " + hora : ""));
-    if (nota) linhas.push("Notas: " + nota);
-    window.open("https://wa.me/" + TELEFONE + "?text=" + encodeURIComponent(linhas.join("\n")), "_blank");
+  erro.textContent="";
+
+  var ids=Object.keys(favoritos).filter(function(id) {
+    return achar(id);
   });
-  document.getElementById("limpar").addEventListener("click", function () { favoritos = {}; sincronizar(); });
 
-  (function () {
-    var h = new Date(), m = String(h.getMonth() + 1).padStart(2, "0"), d = String(h.getDate()).padStart(2, "0");
-    document.getElementById("data").min = h.getFullYear() + "-" + m + "-" + d;
-  })();
+  var linhas=[
+    "Olá! Quero agendar uma visita"+
+    (ids.length?" aos seguintes imóveis:":" para ver imóveis."),
+    ""
+  ];
 
-  aplicar();
+  ids.forEach(function(id) {
+    var p=achar(id);
+    linhas.push(
+      "- "+p.titulo+" ("+p.bairro+", "+p.cidade+") — "+
+      mt(p.preco)+(p.negocio==="Arrendar"?" /mês":"")
+    );
+  });
+
+  if(ids.length) linhas.push("");
+
+  linhas.push(
+    "Nome: "+nome,
+    "Dia preferido: "+data.split("-").reverse().join("/")+
+    (hora?" às "+hora:"")
+  );
+
+  if(nota) linhas.push("Notas: "+nota);
+
+  var url="https://wa.me/"+TELEFONE+
+    "?text="+encodeURIComponent(linhas.join("\n"));
+
+  window.open(url,"_blank");
+});
+
+// ---- LIMPAR FAVORITOS ----
+document.getElementById("limpar").addEventListener("click",function() {
+  favoritos={};
   sincronizar();
+});
+
+// ---- DATA MINIMA ----
+(function() {
+  var h=new Date();
+  var m=String(h.getMonth()+1).padStart(2,"0");
+  var d=String(h.getDate()).padStart(2,"0");
+
+  document.getElementById("data").min=
+    h.getFullYear()+"-"+m+"-"+d;
+})();
+
+aplicar();
+sincronizar();
+
 </script>
 </body>
 </html>
