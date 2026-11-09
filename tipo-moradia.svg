@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img">
+<rect width="600" height="400" fill="#cfe6f5"/><circle cx="500" cy="80" r="36" fill="#f6c453"/>
+<rect y="300" width="600" height="100" fill="#7fb069"/><path d="M0 300 Q300 280 600 300" fill="#6aa058"/>
+<rect x="120" y="170" width="300" height="140" fill="#f4efe6"/>
+<path d="M100 175 L270 80 L440 175Z" fill="#c4582a"/>
+<rect x="250" y="230" width="46" height="80" fill="#12304a"/><circle cx="288" cy="272" r="3" fill="#f6c453"/>
+<rect x="150" y="200" width="70" height="50" fill="#9fd0e6" stroke="#fff" stroke-width="4"/><rect x="320" y="200" width="70" height="50" fill="#9fd0e6" stroke="#fff" stroke-width="4"/>
+<rect x="240" y="120" width="60" height="36" fill="#9fd0e6" stroke="#fff" stroke-width="4"/>
+<rect x="430" y="290" width="150" height="70" rx="10" fill="#3fa7c9"/><rect x="436" y="296" width="138" height="58" rx="8" fill="#7cd0e8"/>
+<rect x="60" y="240" width="12" height="70" fill="#7a5237"/><circle cx="66" cy="225" r="36" fill="#3b8a5c"/>
+<path d="M230 310 L250 400 L330 400 L310 310Z" fill="#d9d2c5"/>
+</svg>
